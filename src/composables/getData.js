@@ -12,6 +12,9 @@ export const useGetData = () => {
         try {
             const res = await axios.get(url);
             data.value = res.data;
+
+            //console.log(data);
+
         } catch (e) {
             //console.log(e)
             error.value = 'Error de servidor';
